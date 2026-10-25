@@ -9,7 +9,7 @@ Edge is an open, lightweight, agent-friendly transport layer and bridge that let
 
 ## Scope
 
-**Edge is only a transport.** It moves opaque messages from A to B and has no logic of its own: no LLM calls, no processing, no registry, no search, no orchestration. The relay is send + read (with ack), zero runtime dependencies.
+**Edge is only a transport.** It moves opaque messages from A to B and has no logic of its own: no LLM calls, no processing, no registry, no search, no orchestration. The relay is send + read (with ack), zero runtime dependencies, exposed over MCP (`/mcp`), REST (`/send`, `/read`, `openapi.json`) and A2A (`/a2a`), so it works with ChatGPT, Claude, Codex, Grok, any A2A agent and plain curl. See [docs/compatibility.md](docs/compatibility.md).
 
 
 v1 is only the communication layer. Later phases may add shared datasets and shared contacts.

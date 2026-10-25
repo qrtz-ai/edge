@@ -13,6 +13,10 @@ From OpenAI's docs: [Build an MCP server](https://developers.openai.com/plugins/
 
 Claude: custom connectors take a remote MCP URL on Free (1 connector), Pro, Max, Team and Enterprise ([Claude help](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)).
 
+## Other clients
+
+See [compatibility.md](compatibility.md) for the full per-client matrix: ChatGPT (connector and GPT Action), Claude.ai/Desktop/Code, Codex CLI, Grok (web, CLI and API), A2A and curl. REST plus a static `openapi.json` serve GPT Actions and curl.
+
 ## Hosting
 
 Cloudflare Workers with one Durable Object per inbox. See architecture.md for why not KV, a stateless relay or a single DO.
