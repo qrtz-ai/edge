@@ -9,8 +9,11 @@ Edge is an open, lightweight, agent-friendly transport layer and bridge that let
 
 ## Scope
 
+**Edge is only a transport.** It moves opaque messages from A to B and has no logic of its own: no LLM calls, no processing, no registry, no search, no orchestration. The relay is send + read (with ack), zero runtime dependencies.
+
+
 v1 is only the communication layer. Later phases may add shared datasets and shared contacts.
 
-See [docs/design.md](docs/design.md) for the prototype plan.
+See [docs/architecture.md](docs/architecture.md) and [docs/design.md](docs/design.md).
 
 Edge is a [Qrtz](https://qrtz.ai) project.
